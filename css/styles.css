@@ -1,6 +1,6 @@
 body {
   font-size: 16px;
-  color: black;
+  color: #fff;
   background-color: #fffff0;
   font-family: 'Oxygen', sans-serif;
 }
@@ -40,7 +40,7 @@ body {
 .navbar-brand p { /* Kosher cert */
   color: #000;
   text-transform: uppercase;
-  font-size: 1em;
+  font-size: .7em;
   margin-top: 15px;
 }
 .navbar-brand p span { /* Star-K */
@@ -55,7 +55,7 @@ body {
   text-align: center;
 }
 #nav-list a:hover {
-  color: #fffff0;
+  background: #fffff0;
 }
 #nav-list a span {
   font-size: 1.8em;
@@ -82,46 +82,44 @@ body {
   margin-top: -30px;
 }
 /* END HEADER */
+.container .jumbotron {
+  box-shadow: 0 0 50px #a3ffb0;
+  border: 2px solid #fffff0;
+}
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-  .jumbotron {
-    background: url('../Img/jumbotron_1080.jpg') no-repeat;
-    box-shadow: 0 0 50px #7a7c73;
-    height: 1080px;
-    border: 2px solid #098500;
+  .container .jumbotron {
+    background: url('../img/jumbotron_1080.jpg') no-repeat;
+    height: 674px;
+    width: 1080px;
   }
-
 }
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
   /* Header */
   #logo-img {
-    background: url('../Img/logo-m.png') no-repeat;
+    background: url('../img/logo-m.png') no-repeat;
     width: 100px;
     height: 100px;
     margin: 5px 5px 5px 0;
   }
 
+    .container .jumbotron {
+      background: url("../img/jumbotron_992.jpg") no-repeat;
+      height: 619px;
+    }
   /* End Header */
-  .jumbotron {
-    background: url('../Img/jumbotron_992.jpg') no-repeat;
-    box-shadow: 0 0 50px #7a7c73;
-    height: 992px;
-    border: 2px solid #098500;
-  }
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-  .jumbotron {
-    background: url('../Img/jumbotron_768.jpg') no-repeat;
-    box-shadow: 0 0 50px #7a7c73;
-    height: 768px;
-    border: 2px solid #098500;
+  .container .jumbotron {
+    background: url('../img/jumbotron_768.jpg') no-repeat;
+    height: 479px;
   }
-} /* Added closing curly brace for the media query */
+}
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
@@ -166,10 +164,11 @@ body {
     text-transform: uppercase;
   }
   /* End Header */
-  .jumbotron {
+
+  /*Home Page*/
+  .container .jumbotron {
     margin-top: 30px;
-    padding: 0;
-    box-shadow: 0 0 50px #7a7c73; /* Fixed the typo here */
-    border: 2px solid #098500;
+    padding: 0 ;
   }
-} /* Removed an extra closing curly brace */
+
+}
