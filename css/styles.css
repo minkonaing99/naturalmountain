@@ -85,6 +85,12 @@ body {
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
+  .jumbotron {
+    background: url('../Img/jumbotron_1080.jpg') no-repeat;
+    box-shadow: 0 0 50px #7a7c73;
+    height: 1080px;
+    border: 2px solid #098500;
+  }
 
 }
 
@@ -97,13 +103,25 @@ body {
     height: 100px;
     margin: 5px 5px 5px 0;
   }
+
   /* End Header */
+  .jumbotron {
+    background: url('../Img/jumbotron_992.jpg') no-repeat;
+    box-shadow: 0 0 50px #7a7c73;
+    height: 992px;
+    border: 2px solid #098500;
+  }
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-
-}
+  .jumbotron {
+    background: url('../Img/jumbotron_768.jpg') no-repeat;
+    box-shadow: 0 0 50px #7a7c73;
+    height: 768px;
+    border: 2px solid #098500;
+  }
+} /* Added closing curly brace for the media query */
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
@@ -138,7 +156,7 @@ body {
     margin: 0 20px;
     padding: 10px;
     border: 2px solid #fff;
-    background-color: #f6b319;
+    background-color: #99EE99;
     color: #951c49;
   }
   #xs-deliver {
@@ -148,5 +166,10 @@ body {
     text-transform: uppercase;
   }
   /* End Header */
-
-}
+  .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+    box-shadow: 0 0 50px #7a7c73; /* Fixed the typo here */
+    border: 2px solid #098500;
+  }
+} /* Removed an extra closing curly brace */
